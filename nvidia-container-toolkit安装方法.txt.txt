@@ -25,3 +25,6 @@ export NVIDIA_CONTAINER_TOOLKIT_VERSION=1.17.8-1
       nvidia-container-toolkit-base=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
       libnvidia-container-tools=${NVIDIA_CONTAINER_TOOLKIT_VERSION} \
       libnvidia-container1=${NVIDIA_CONTAINER_TOOLKIT_VERSION}
+
+wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda_12.3.2_545.23.08_linux.run
+sudo sh cuda_12.3.2_545.23.08_linux.run
