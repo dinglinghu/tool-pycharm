@@ -30,3 +30,5 @@ wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/
 sudo sh cuda_12.3.2_545.23.08_linux.run
 
 https://uk.download.nvidia.com/XFree86/Linux-x86_64/550.40.07/NVIDIA-Linux-x86_64-550.40.07.run
+
+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
