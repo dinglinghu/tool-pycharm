@@ -33,7 +33,18 @@ https://uk.download.nvidia.com/XFree86/Linux-x86_64/550.40.07/NVIDIA-Linux-x86_6
 
 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---------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----------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
 
+-------------------------------------------------------
+export |grep CUDA_VISIBLE_DEVICES
 
-test
+echo "Copying and extracting python environment..."
 
-gfds
+cp /mnt/duchengyao/duchengyao/llama-factory/miniconda-llama-factory.tar /root && \
+cp -r  /mnt/duchengyao/duchengyao/llama-factory/data /root/data && \
+cd /root && \
+tar -xf miniconda-llama-factory.tar || exit ;
+
+echo "Done."
+
+export PATH=/root/miniconda3/envs/llama-factory/bin:$PATH
+
+PYTHONUNBUFFERE=1 FORCE_TORCHRUN=1 NNODES=$WORLD_SIZE NODE_RANK=$RANK MASTER_ADDR=$MASTER_ADDR MASTER_PORT=29500 llamafactory-cli train /mnt/duchengyao/duchengyao/llama-factory/llama3_lora_sft.yaml
