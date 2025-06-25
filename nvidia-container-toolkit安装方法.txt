@@ -48,3 +48,6 @@ echo "Done."
 export PATH=/root/miniconda3/envs/llama-factory/bin:$PATH
 
 PYTHONUNBUFFERE=1 FORCE_TORCHRUN=1 NNODES=$WORLD_SIZE NODE_RANK=$RANK MASTER_ADDR=$MASTER_ADDR MASTER_PORT=29500 llamafactory-cli train /mnt/duchengyao/duchengyao/llama-factory/llama3_lora_sft.yaml
+
+
+sk-NnpmAJWrqGc4yj3LF1Bf3e52Db7941698e8d8637B45cFaF7
