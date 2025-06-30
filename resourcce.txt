@@ -1,0 +1,3 @@
+https://github.com/MasterYip/HITSA-Courses-Xmind-Note.git
+https://github.com/QSCTech/zju-icicles.git
+https://github.com/TheBloodthirster/BUAA_Course_Sharing.git
